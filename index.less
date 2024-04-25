@@ -1,0 +1,135 @@
+@import 'base';
+ 
+@vw: 3.75vw;
+@bpink: #fb7299;
+
+//toubu
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    // 让它在最上面一行
+    z-index: 1;
+    width: 100%;
+    // width: 100vw;
+    height: (84 / 3.75vw);
+    // 改成不透明
+    background-color: #fff;
+
+    .top {
+        // 亲爹加
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: (44 / 3.75vw);
+        padding-left: (18 / 3.75vw);
+        padding-right: (12 / 3.75vw);
+        // background-color: green;
+        .left {
+            
+            a {
+                img {
+                    width: (66.03 / @vw);
+                }
+            } 
+        }
+        .right {
+            display: flex;
+            .iconfont {
+                font-size: (22 / @vw);
+                color: #ccc;
+            }
+            .login {
+                width:  (24 / @vw);
+                height: (24 / @vw);
+                margin-left: (24/ @vw);
+            }
+            .download {
+                width:  (72 / @vw);
+                height: (24 / @vw);
+                margin-left: (24/ @vw);
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+
+        height: (40 / 3.75vw);
+        border-bottom: 1px solid #eee;
+        .more {
+            a {
+                display: block;
+                width: (40 / @vw);
+                height: (40 / @vw);
+                // background-color: pink;
+                text-align: center;
+                line-height: (40 / @vw);
+                // font-size: (22 / @vw);
+                .iconfont {
+                    font-size: (22 / @vw);
+                }
+                color: #ccc;
+            }
+        }
+        .tab {
+            ul {
+                display: flex;
+                li {
+                    padding: 0 (16 / @vw);
+                    a {
+                        display: block;
+                        // 本来为40，考虑两个小描边
+                        line-height: (38 / @vw);
+                        height: (38 / @vw);
+                        font-size: (14 / @vw);
+
+                        &.current {
+                        // current在谁身上加在谁里面
+                            color: @bpink;
+                            border-bottom: 1px solid @bpink;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//视频区域
+// b站的布局方案：先写大盒子内边距5，再给每个视频写左右都有5——这样加一块就有10px
+.video_content {
+    padding: (84 / @vw) (5 / @vw) 0;
+    .video_list {
+        display: flex;
+        // 让弹性盒子换行
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a {
+            width: 50%;
+            padding: (8 / @vw) (5 / @vw);
+            // background-color: pink;
+            font-size: (12 / @vw);
+            .txt {
+                margin-top: (5 / @vw);
+            }
+            .pic {
+                position: relative;
+                .count {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: (8 / @vw);
+                    background-image: linear-gradient( 0deg,rgba(0,0,0,.85),transparent);
+                    color: #fff;
+                    i {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
