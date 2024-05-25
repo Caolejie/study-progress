@@ -1,0 +1,51 @@
+* {
+    /* 清除默认，浮动等 */
+}
+/* 脱标 */
+.wrapper {
+    width: 1200px;
+    /* 版心居中 */
+    margin: 0 auto; 
+}
+/* 纯文字区域可以不给宽 */
+div {
+    font-size: 23px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* margin: 30px auto; (上下 左右) 左右不能给0 */ 
+
+    /* 文字居中:水平，竖直 */
+    text-align: center;
+    height: 42px;
+    line-height: 42;
+    /* 行高属于文字属性，能继承 */
+
+    /* 浮动 */
+    float: left;
+
+    /* 加入背景图 */
+    background-image: url(../image/btn.png);
+
+    /* 设置背景色(前三)，透明度（第四个） */
+    background-color: rgba(0,0,0,0.3);
+
+    /* 设置阴影 */
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.3);
+}
+
+/* 悬停 */
+a:hover {
+    /* 行内加宽高不生效，需要： */
+    display: block;
+}
+
+/* 选中第五个 */
+.box li:nth-child(5n){
+
+}
+
+input::placeholder {
+    /* 调整html标签中属性的样式 */
+}
+
+/* 浮动脱标，需要清除浮动clearfix,谁撑不开谁调用 */
