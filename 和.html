@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    a {
+    text-decoration: none;
+    color: rgb(107, 89, 89);
+    }
+    body {
+      background-color: rgb(187, 30, 30);
+    font-family: "Microsoft YaHei", sans-serif;
+    }
+    /* 主体 */
+    .box {
+      width: 900px;
+      height: 450px;
+      padding: 20px 30px;
+      background-color: rgba(255, 255, 255, 0.5); 
+      border-radius: 10px;
+    }
+    /* 左部分 */
+    .left {
+      width: 540px;
+      margin-right: 10px;
+      float: left;
+    }
+    .left header {
+      color: rgb(216, 214, 214);
+    }
+    .left header span {
+      font-weight: bold;
+      margin-left: 20px;
+      padding-bottom: 5px;
+      border-bottom: 3px solid rgba(50, 220, 250, 0.897);
+      color: #000;
+    }
+    .content {
+      overflow: hidden;
+    }
+    .content h4 {
+      font-size: 18px;
+      line-height: 0;
+    }
+    .small-title {
+      height: 20px;
+      color: rgb(107, 89, 89);
+      font-size: 10px;
+      width: 540px;
+      overflow: hidden;
+    }
+    .small-title .time {
+      float: left;
+      margin-right: 115px;
+    }
+    .small-title .time span {
+      margin-left: 20px;
+    }
+    .small-title .bobao1 {
+      float: left;
+      margin-left: 188px;
+      font-size: 10px;
+    }
+    .box-conent {
+      padding: 10px 0;
+    }
+    .img-box {
+      width: 165px;
+      height: 110px;
+      background-color: #fffefe; 
+      border-radius: 10px;
+    }
+    .box-conent .img-box {
+      float: left;
+      margin-right: 8px;
+    }
+    .box-conent .conent-box{
+      float: left;
+      width: 320px;
+    }
+    .box-conent .conent-box a {
+      color: #000;
+      display: block;
+      margin-bottom: 45px;
+      white-space: pre-wrap;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .box-conent .small-title .bobao a{
+      color: rgb(107, 89, 89);
+        font-size: 10px;
+        font-weight: normal;
+    }
+    .content2 {
+      width: 520px;
+    }
+    .content2 .img3 {
+    display: flex; 
+    margin-bottom: 15px;
+    }
+    .content2 .img3 div {
+      width: 165px;
+      height: 110px;
+      background-color: #fffefe; 
+      margin-right: 5px;
+    }
+    .content2 .img3 div:first-child {
+      border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .content2 .img3 div:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .content2 h4 a {
+      white-space: pre-wrap;
+        color: black;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .content2 .small-title .time {
+      margin-right: 280px;
+    }
+
+    /* 右部分 */
+    .right {
+      float: left;
+    }
+    .right header {
+      height: 25px;
+      margin-left: 40px;
+    }
+    .right header h6 {
+      display: inline-block;
+      margin-right: 170px;
+    }
+    .right ul {
+      list-style-type: none; 
+    }
+    .right .panel-content .ranking-item{
+      width: 300px;
+      height: 36.6px;
+      line-height: 36.6px;
+      color: #000;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .right .panel-content .ranking-item:hover {
+      background: #f7f7f7;
+    }
+    .right .panel-content .ranking-item .ranking-index{
+      color: gray;
+      display: inline-block;
+      width: 20px;
+    }
+    .right .panel-content .ranking-item .color-one {
+      color: rgb(243, 12, 12);
+    }
+    .right .panel-content .ranking-item .color-two {
+      color: rgba(243, 85, 12, 0.938);
+    }
+    .right .panel-content .ranking-item .color-three {
+      color: rgb(243, 201, 12);
+    }
+    .right .panel-content .ranking-item .ranking-count-name{
+      font-size: 16px;
+      color:#333;
+      vertical-align: top;
+    }
+    .re {
+      display: inline-block;
+      background-color: rgb(255, 123, 0);
+      color: white;
+      font-weight: normal;
+      font-size: 8px;
+      padding: 3px 5px;
+      margin-left: 5px;
+      border-radius: 5px;
+      line-height: 1; 
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <!-- 左面 -->
+    <div class="left">
+      <header>
+        我的关注
+        <span>推荐</span>
+      </header>
+      <!-- 左上 -->
+      <div class="content">
+        <h4>阿根廷10000比索面额纸币开始流通</h4>
+        <div class="small-title">
+          <div class="time">极目新闻<span>05-08 00:46</span></div>
+          <div class="bobao1"><a href="#">播报</a></div>
+        </div>
+        <div class="box-conent">
+          <div class="img-box"></div>
+          <div class="conent-box">
+            <a href="#">2024高考倒计时一个月！这些信息要掌握</a>
+            <div class="small-title">
+              <div class="time">中国新闻网<span>05-07 10:51</span></div>
+              <div class="bobao"><a href="#">播报</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 左下 -->
+      <div class="content2">
+        <h4><a href="#">中国撤侨是免费的，唯独有一次收费了？网友：活该，多收点才好</a></h4>
+        <div class="img3">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="small-title">
+          <div class="time">兆易蓉卫部茨<span>05-01 21:51</span></div>
+          <div class="bobao"><a href="#">播报</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- 右面 -->
+    <div class="right">
+      <header>
+        <h6>热搜榜单</h6>
+        <span><a href="#">换一换</a></span>
+      </header>
+      <div class="panel-content">
+        <ul>
+          <li class="ranking-item">
+            <a href="#">
+                <i class="ranking-index color-one">1</i>
+                <span class="ranking-count-name">列车员称山东人穷 铁路部门致歉调查核实</span>
+            </a>
+          </li>
+            <li class="ranking-item">
+                <a href="#">
+                    <i class="ranking-index color-two">2</i>
+                    <span class="ranking-count-name">青岛小伙营救落水母子不幸溺亡</span>
+                </a>
+            </li>
+            <li class="ranking-item">
+                <a href="#">
+                    <i class="ranking-index color-three">3</i>
+                    <span class="ranking-count-name">中塞"铁杆"友谊之路越走越宽</span>   
+                </a>
+            </li>
+            <li class="ranking-item">
+                <a href="#">
+                    <i class="ranking-index">4</i>
+                    <span class="ranking-count-name">泰国警察绑架5名中国游客勒索<span class="re">热</span></span>
+                </a>
+            </li>
+            <li class="ranking-item">
+                <a href="#">
+                    <i class="ranking-index">5</i>
+                    <span class="ranking-count-name">为中匈友好合作开辟新篇章</span>
+                </a>
+            </li>
+            <li class="ranking-item">
+                <a href="#">
+                    <i class="ranking-index">6</i>
+                    <span class="ranking-count-name">我iPad也要低人一等了</span> 
+                </a>
+            </li>
+            <li class="ranking-item">
+                <a href="#">
+                    <i class="ranking-index">7</i>
+                    <span class="ranking-count-name">男子地铁抽烟扬言判无期刚出来</span>
+                </a>
+            </li>
+            <li class="ranking-item">
+                <a href="#">
+                    <i class="ranking-index">8</i>
+                    <span class="ranking-count-name">中介半年没开单上吊自杀?谣言</span>
+                </a>
+            </li>
+            <li class="ranking-item">
+                <a href="#">
+                    <i class="ranking-index">9</i>
+                    <span class="ranking-count-name">眼泪女王没获奖的原因</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- <script>
+    function findShu(a) {
+      if (a.length === 0) {
+        return 1 
+      }
+      let max = ''
+      let count = 0
+      let str = a[0];
+      let chuxiancishu = 1
+      for (let i = 1; i <= a.length; i++) {
+        if (a[i] === str) {
+            chuxiancishu++
+        } else {
+            if (chuxiancishu > count) {
+              count = chuxiancishu
+              max = str
+            }
+            str = a[i]
+            chuxiancishu = 1
+        }
+      }
+    return max + "连续重复出现次数最多,出现" + count
+    }
+    console.log(findShu("2222222222211111111555555555555555555555555555555555"))
+  </script> -->
+  <!-- <script>
+    function isPalindrome(str) {
+    // 去除字符串首尾的空格，并转换为小写，处理大小写不敏感情况
+    str = str.trim().toLowerCase();
+    // 基本情况
+    if (str.length <= 1) {
+        return true;
+    }
+    // 递归情况
+    if (str[0] !== str[str.length - 1]) {
+        return false;
+    }
+    // 递归调用，检查去掉首尾字符的子串
+    return isPalindrome(str.substring(1, str.length - 1));
+}
+
+// 测试示例
+console.log(isPalindrome("level"));      // true
+console.log(isPalindrome("aaaa"));  // false
+console.log(isPalindrome("A man a plan a canal Panama")); // true
+</script>  --> 
+</body>
+</html>
